@@ -21,6 +21,7 @@ const FilterOptions = ({}) => {
                     <FormGroup>
                         {Object.entries(filterOptions).map(([key, value]) => (
                             <FormControlLabel
+                                key={key}
                                 control={<Checkbox checked={value} onChange={handleChange} name={key} />}
                                 label={key}
                             />
