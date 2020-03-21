@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./pages/home/Home";
+import AdressBook from "./pages/adressbook/AdressBook";
 import Edit from "./pages/edit/Edit";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
@@ -28,6 +29,9 @@ export default function BasicExample() {
           <ul>
             <li>
               <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/adressbook">AdressBook</Link>
             </li>
             <li>
               <Link to="/edit">Edit</Link>
@@ -61,6 +65,9 @@ export default function BasicExample() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/adressbook">
+              <AdressBook />
             </Route>
             <Route path="/edit">
               <Edit />

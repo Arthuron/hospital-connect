@@ -5,8 +5,12 @@ const Button = ({text}) => {
     return <button>{text}</button>;
 };
 
-Button.propTypes = {};
+Button.propTypes = {
+    text:PropTypes.string
+};
 
-Button.defaultProps = {};
+Button.defaultProps = {
+    text:"Button"
+};
 
 export default Button;

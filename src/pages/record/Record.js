@@ -5,7 +5,8 @@ export default function Record() {
     return (
         <div>
             <h2>Record</h2>
-            <Button text={"test"}/>
+
+            <Button/>
         </div>
     );
 }
