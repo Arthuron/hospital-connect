@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/start/Start.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MapContainer/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/mapContainer/MapContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/editstock/Editstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editstock/Editstock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/Filter/FilerOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/Filter/FilerOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/GoogleMaps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/GoogleMaps/GoogleMaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/HospitalBox/HospitalBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/HospitalBox/HospitalBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/HospitalBoxes/HospitalBoxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/HospitalBoxes/HospitalBoxes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="27074000" />
+      <workItem from="1584751174888" duration="27512000" />
     </task>
     <servers />
   </component>
@@ -124,6 +128,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="368" y="191" width="703" height="518" key="find.popup/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794122609" />
+    <state x="437" y="236" key="git4idea.merge.GitMergeDialog" timestamp="1584827807688">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="437" y="236" key="git4idea.merge.GitMergeDialog/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827807688" />
     <state x="311" y="210" key="git4idea.merge.GitPullDialog" timestamp="1584826923662">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
