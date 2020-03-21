@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Start from "./pages/start/Start";
 import AdressBook from "./pages/adressbook/AdressBook";
-import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
 import Editstock from "./pages/editstock/Editstock";
 
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
+import RegistryContainer from "./containers/registryContainer/RegistryContainer";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -72,7 +72,7 @@ export default function BasicExample() {
                         <RecordStockContainer />
                     </Route>
                     <Route path="/registry">
-                        <Registry />
+                        <RegistryContainer />
                     </Route>
                     <Route path="/map">
                         <MapContainer />
