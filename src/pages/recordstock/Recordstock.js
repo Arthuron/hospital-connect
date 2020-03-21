@@ -16,7 +16,6 @@ const Recordstock = ({hospitals}) => {
     // fake ID - muss spaeter durch einen login bekannt sein.
     const userID = '42';
     const hospital = hospitals[userID];
-    console.log(hospital);
 
 
 
