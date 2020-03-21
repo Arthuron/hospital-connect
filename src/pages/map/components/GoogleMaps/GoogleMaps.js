@@ -21,8 +21,19 @@ const defaultProps = {
         lat: 52.52437,
         lng: 13.41053
     },
-    zoom: 13
+    zoom: 11
 };
+
+const getMapBounds = (map, maps, locations) => {
+    const bounds = new maps.LatLngBounds();
+
+    locations.forEach(({ adress: { cordinates } }, index) => {
+        bounds.extend(new maps.LatLng(parseFloat(cordinates.lat), parseFloat(cordinates.lang)));
+    });
+
+    map.fitBounds(bounds);
+};
+
 const GoogleMaps = () => {
     const { filterResults } = React.useContext(FilterContext);
     return (
@@ -32,6 +43,7 @@ const GoogleMaps = () => {
                     bootstrapURLKeys={{ key: "AIzaSyCU_R5SVAK41jJCURdBu9xA1vfZktjXvEo" }}
                     defaultCenter={defaultProps.center}
                     defaultZoom={defaultProps.zoom}
+                    onGoogleApiLoaded={({ map, maps }) => getMapBounds(map, maps, filterResults)}
                 >
                     {filterResults.map(({ name, contact, adress: { cordinates } }, index) => {
                         return (
