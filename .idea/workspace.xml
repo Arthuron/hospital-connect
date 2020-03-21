@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recordstock/ChooseKindOfRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/ChooseKindOfRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/hospitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/hospitals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/registry" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/RecordStockContainer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -40,11 +41,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/RecordStockContainer" />
       <recent name="$PROJECT_DIR$/src/pages/registry" />
       <recent name="$PROJECT_DIR$/src/pages/record" />
       <recent name="$PROJECT_DIR$/src/pages/map" />
       <recent name="$PROJECT_DIR$/src/pages/login" />
-      <recent name="$PROJECT_DIR$/src/pages/edit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages" />
@@ -83,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="19656000" />
+      <workItem from="1584751174888" duration="20809000" />
     </task>
     <servers />
   </component>

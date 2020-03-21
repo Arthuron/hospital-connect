@@ -2,10 +2,16 @@ import React from "react";
 import Container from '@material-ui/core/Container';
 import ChooseKindOfRequest from "./ChooseKindOfRequest";
 
-const Recordstock = ({name}) => {
+const Recordstock = ({hospitals}) => {
+
+    // fake ID - muss spaeter durch einen login bekannt sein.
+    const userID = '42';
+    const hospital = hospitals[userID];
+    console.log(hospital);
+
     return (
         <Container fixed>
-            <ChooseKindOfRequest name={name}/>
+            <ChooseKindOfRequest name={hospital.name}/>
         </Container>
     );
 };

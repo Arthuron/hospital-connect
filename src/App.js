@@ -5,9 +5,8 @@ import AdressBook from "./pages/adressbook/AdressBook";
 import Editstock from "./pages/editstock/Editstock";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
-import Map from "./pages/map/Map";
-import Recordstock from "./pages/recordstock/Recordstock";
-import MapContainer from "./containers/MapContainer/Hospitals";
+import MapContainer from "./containers/MapContainer/MapContainer";
+import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -66,7 +65,7 @@ export default function BasicExample() {
                         <AdressBook />
                     </Route>
                     <Route exact path="/recordstock">
-                        <Recordstock />
+                        <RecordStockContainer />
                     </Route>
                     <Route path="/edit">
                         <Editstock />

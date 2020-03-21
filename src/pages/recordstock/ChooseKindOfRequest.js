@@ -17,7 +17,7 @@ const ChooseKindOfRequest = ({name}) => {
                     Wie kannst du uns oder wir dich Unterstützen ?
                 </Typography>
             </Box>
-            <Box p={1} bgcolor="background.paper">
+            <Box p={0} pb={1} pt={1} bgcolor="background.paper">
                 <Divider variant="middle"/>
             </Box>
             <Box p={1} bgcolor="background.paper">
