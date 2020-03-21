@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Start from "./pages/start/Start";
 import AdressBook from "./pages/adressbook/AdressBook";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
@@ -53,7 +53,7 @@ export default function BasicExample() {
         */}
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Start />
                     </Route>
                     <Route path="/login">
                         <Login />
