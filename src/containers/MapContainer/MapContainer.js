@@ -6,7 +6,7 @@ import Map from "../../pages/map/Map";
 const MapContainer = ({}) => {
     const { hospitals } = useSelector(state => state);
 
-    return <Map hospitals={hospitals} />;
+    return <Map hospitals={Object.values(hospitals)} />;
 };
 
 MapContainer.propTypes = {};
