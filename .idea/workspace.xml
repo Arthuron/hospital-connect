@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/record/Record.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/record/Record.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="6238000" />
+      <workItem from="1584751174888" duration="7815000" />
     </task>
     <servers />
   </component>
@@ -83,5 +85,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584784480291" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584789679703">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584789679703" />
   </component>
 </project>
