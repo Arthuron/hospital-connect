@@ -4,6 +4,7 @@
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/hospitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/hospitals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +35,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
@@ -81,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="16549000" />
+      <workItem from="1584751174888" duration="19656000" />
     </task>
     <servers />
   </component>
@@ -93,6 +95,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584784480291" />
+    <state x="460" y="295" width="519" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584805597995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="460" y="295" width="519" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584805597995" />
     <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1584794146511">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

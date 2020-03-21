@@ -1,5 +1,5 @@
-const initialState = [
-    {
+const initialState = {
+    "6": {
         name: "Evangelische Elisabeth Klinik",
         tel: "030 765765756",
 
@@ -31,7 +31,7 @@ const initialState = [
             }
         ]
     },
-    {
+    "33": {
         name: "Alexianer St. Hedwig Krankenhaus",
         tel: "030 765765756",
 
@@ -63,7 +63,7 @@ const initialState = [
             }
         ]
     },
-    {
+    "42": {
         name: "St. Joseph Krankenhaus",
         tel: "030 765765756",
 
@@ -95,7 +95,7 @@ const initialState = [
             }
         ]
     }
-];
+};
 
 export default function(state = initialState, action) {
     switch (action.type) {
