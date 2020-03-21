@@ -6,6 +6,11 @@ import Editstock from "../editstock/Editstock";
 
 const Recordstock = ({hospitals}) => {
 
+    // clickFlowStatus:
+    // 0 = init
+    // 1 = HR request
+    // 2 = item request
+    // 3 = item list
     const [clickFlowStatus, setclickFlowStatus] = React.useState(0);
 
     // fake ID - muss spaeter durch einen login bekannt sein.
@@ -13,10 +18,7 @@ const Recordstock = ({hospitals}) => {
     const hospital = hospitals[userID];
     console.log(hospital);
 
-    // 0 = init
-    // 1 = HR request
-    // 2 = item request
-    // 3 = item list
+
 
     let _incrementFlowStatus = () => {
         setclickFlowStatus(clickFlowStatus + 1);
@@ -49,7 +51,7 @@ const Recordstock = ({hospitals}) => {
             />}
             {clickFlowStatus === 3 &&
             <Editstock
-                name={hospital.name}
+                hospital={hospital}
             />}
         </Container>
     );

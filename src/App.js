@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/home/Home";
 import AdressBook from "./pages/adressbook/AdressBook";
-import Editstock from "./pages/editstock/Editstock";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
 import MapContainer from "./containers/MapContainer/MapContainer";
@@ -27,9 +26,6 @@ export default function BasicExample() {
                     </li>
                     <li>
                         <Link to="/adressbook">AdressBook</Link>
-                    </li>
-                    <li>
-                        <Link to="/edit">EditStock</Link>
                     </li>
                     <li>
                         <Link to="/registry">Registry</Link>
@@ -66,9 +62,6 @@ export default function BasicExample() {
                     </Route>
                     <Route exact path="/recordstock">
                         <RecordStockContainer />
-                    </Route>
-                    <Route path="/edit">
-                        <Editstock />
                     </Route>
                     <Route path="/registry">
                         <Registry />

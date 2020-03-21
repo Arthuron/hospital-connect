@@ -1,10 +1,18 @@
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 import React from "react";
+import Container from "@material-ui/core/Container";
+import PropTypes from "prop-types";
 
-export default function Editstock() {
+const Editstock = ({hospital}) => {
     return (
-        <div>
-            <h2>Edit stock</h2>
-        </div>
+        <Container fixed>
+
+        </Container>
     );
-}
+};
+Editstock.propTypes = {
+    hospital: PropTypes.object
+};
+
+Editstock.defaultProps = {hospital:{}};
+
+export default Editstock;
