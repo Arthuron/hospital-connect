@@ -25,7 +25,6 @@ const defaultProps = {
 };
 const GoogleMaps = () => {
     const { filterResults } = React.useContext(FilterContext);
-    console.log(filterResults);
     return (
         <div className={styles.googleMaps}>
             <div style={{ height: 600, width: "100%" }}>
@@ -35,8 +34,6 @@ const GoogleMaps = () => {
                     defaultZoom={defaultProps.zoom}
                 >
                     {filterResults.map(({ name, contact, adress: { cordinates } }, index) => {
-                        console.log(name, parseFloat(cordinates.lat), parseFloat(cordinates.lang));
-                        console.log(defaultProps.center.lat, defaultProps.center.lng);
                         return (
                             <AnyReactComponent
                                 key={index}

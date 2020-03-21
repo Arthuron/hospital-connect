@@ -18,7 +18,7 @@ const HospitalBox = ({ hilfsmittel, title, description, tel }) => {
             <div className={styles.hilfsmittel}>
                 <Typography>Hilfsmittel: </Typography>
                 {hilfsmittel.map(({ name, status }) => (
-                    <div className={styles.indicatorWrapper}>
+                    <div key={name} className={styles.indicatorWrapper}>
                         <span
                             className={className(styles.indicator, {
                                 [styles[mapStatusToColor(status)]]: true
