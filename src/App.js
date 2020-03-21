@@ -4,8 +4,9 @@ import Home from "./pages/home/Home";
 import AdressBook from "./pages/adressbook/AdressBook";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
-import MapContainer from "./containers/MapContainer/MapContainer";
+
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
+import MapContainer from "./containers/mapContainer/MapContainer";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).

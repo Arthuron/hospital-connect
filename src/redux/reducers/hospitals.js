@@ -1,6 +1,7 @@
 const initialState = {
     "6": {
         name: "Evangelische Elisabeth Klinik",
+        verband: "Verband 1",
         tel: "030 765765756",
 
         contact: {
@@ -10,8 +11,8 @@ const initialState = {
         },
         adress: {
             cordinates: {
-                lang: "432423.3",
-                lat: "534534534"
+                lat: "52.503727",
+                lang: "13.364056"
             },
             street: "Lützowstraße 26",
             postalcode: 13467
@@ -32,7 +33,8 @@ const initialState = {
         ]
     },
     "33": {
-        name: "Alexianer St. Hedwig Krankenhaus",
+        name: "Charite",
+        verband: "Verband 2",
         tel: "030 765765756",
 
         contact: {
@@ -42,8 +44,8 @@ const initialState = {
         },
         adress: {
             cordinates: {
-                lang: "432423.3",
-                lat: "534534534"
+                lat: "52.526462",
+                lang: "13.376625"
             },
             street: "Lützowstraße 26",
             postalcode: 13467
@@ -65,8 +67,8 @@ const initialState = {
     },
     "42": {
         name: "St. Joseph Krankenhaus",
+        verband: "Verband 3",
         tel: "030 765765756",
-
         contact: {
             name: "Vorname",
             surname: "Nachname",
@@ -74,8 +76,8 @@ const initialState = {
         },
         adress: {
             cordinates: {
-                lang: "432423.3",
-                lat: "534534534"
+                lat: "52.478142",
+                lang: "13.372949"
             },
             street: "Lützowstraße 26",
             postalcode: 13467
