@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/recordstock/AskForWhichNeed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recordstock/AskForHR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recordstock/AskForItems.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recordstock/ChooseKindOfRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/ChooseKindOfRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" afterDir="false" />
     </list>
@@ -84,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="20809000" />
+      <workItem from="1584751174888" duration="24809000" />
     </task>
     <servers />
   </component>
