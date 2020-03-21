@@ -1,46 +1,38 @@
 import React from "react";
-import {Grid, Button, ButtonBase, Container, Typography} from "@material-ui/core";
-import {makeStyles} from "@material-ui/core/styles";
-
-const useStyles = makeStyles(theme =>({
-    root: {
-        width: 200
-    },
-    helpButton: {
-        position: 'relative',
-        height: 200,
-        width: 200,
-        borderRadius: '100%',
-        boxShadow: '0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
-        background: theme.palette.primary.main,
-        color: 'white',
-        marginBottom: 40
-    }
-}));
+import {Button, Container, TextField, Typography} from "@material-ui/core";
+import Box from "@material-ui/core/Box";
 
 export default function Start() {
-    const classes = useStyles();
     return (
-        <Container maxWidth="xs">
-            <Grid container direction="column" justify="flex-end" alignItems="center" spacing={2}>
-                <Grid item xs={12}>
-                    <ButtonBase focusRipple className={classes.helpButton}>
-                        <Typography>
-                            Bedarf melden
-                        </Typography>
-                    </ButtonBase>
-                </Grid>
-                <Grid item xs={12}>
-                    <Button variant="contained" size="large" color="primary" className={classes.root}>
+        <Container fixed>
+            <Container fixed>
+                <Box p={1}>
+                    <Typography variant="h4">
+                        Anmelden
+                    </Typography>
+                </Box>
+                <Box p={1} pb={0}>
+                    <TextField id="username" label="Benutzer" fullWidth={true}/>
+                </Box>
+                <Box p={1} pb={0}>
+                    <TextField id="password" label="Passwort" type="password" autoComplete="current-password" fullWidth={true}/>
+                </Box>
+                <Box p={1} pb={0} textAlign="right">
+                    <Button color="link">
+                        Passwort vergessen
+                    </Button>
+                </Box>
+                <Box p={1} pt={5} bgcolor="background.paper">
+                    <Button variant="contained" color="primary" fullWidth={true}>
                         Anmelden
                     </Button>
-                </Grid>
-                <Grid item xs={12}>
-                    <Button variant="outlined" size="large" color="primary" className={classes.root}>
+                </Box>
+                <Box p={1} pt={0} bgcolor="background.paper">
+                    <Button variant="outlined" color="primary" fullWidth={true}>
                         Registrieren
                     </Button>
-                </Grid>
-            </Grid>
+                </Box>
+            </Container>
         </Container>
     );
 }
