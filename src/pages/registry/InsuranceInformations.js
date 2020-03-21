@@ -24,12 +24,12 @@ const InsuranceInformations = ({ onNext = () => {} }) => {
                 <Grid container spacing={2} p={2}>
                     <Grid item xs={6}>
                         <Box pb={1}>
-                            <TextField fullWidth id="contact" label="Kontaktperson" />
+                            <TextField fullWidth id="postalcode" label="Plz" />
                         </Box>
                     </Grid>
                     <Grid item xs={6}>
                         <Box pb={1}>
-                            <TextField fullWidth id="contact" label="Kontaktperson" />
+                            <TextField fullWidth id="city" label="Ort" />
                         </Box>
                     </Grid>
                 </Grid>
