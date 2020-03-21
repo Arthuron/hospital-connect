@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Start from "./pages/start/Start";
 import AdressBook from "./pages/adressbook/AdressBook";
 import Editstock from "./pages/editstock/Editstock";
 import Registry from "./pages/registry/Registry";
@@ -18,36 +18,36 @@ import RecordStockContainer from "./containers/recordStockContainer/RecordStockC
 // work properly.
 
 export default function BasicExample() {
-    return (
-        <Router>
-            <div>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/adressbook">AdressBook</Link>
-                    </li>
-                    <li>
-                        <Link to="/edit">EditStock</Link>
-                    </li>
-                    <li>
-                        <Link to="/registry">Registry</Link>
-                    </li>
-                    <li>
-                        <Link to="/map">Map</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/recordstock">Record Stock</Link>
-                    </li>
-                </ul>
+  return (
+      <Router>
+        <div>
+          <ul>
+            <li>
+              <Link to="/">Start</Link>
+            </li>
+            <li>
+              <Link to="/adressbook">AdressBook</Link>
+            </li>
+            <li>
+              <Link to="/edit">EditStock</Link>
+            </li>
+            <li>
+              <Link to="/registry">Registry</Link>
+            </li>
+            <li>
+              <Link to="/map">Map</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/recordstock">Record Stock</Link>
+            </li>
+          </ul>
 
-                <hr />
+          <hr />
 
-                {/*
+          {/*
           A <Switch> looks through all its children <Route>
           elements and renders the first one whose path
           matches the current URL. Use a <Switch> any time
@@ -56,7 +56,7 @@ export default function BasicExample() {
         */}
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <Start />
                     </Route>
                     <Route path="/login">
                         <Login />
