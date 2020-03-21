@@ -4,7 +4,7 @@ import React from "react";
 export default function Registry() {
     return (
         <div>
-            <h2>Registry</h2>
+            <h2>Registrie user</h2>
         </div>
     );
 }

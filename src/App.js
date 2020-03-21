@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home/Home";
 import AdressBook from "./pages/adressbook/AdressBook";
-import Edit from "./pages/edit/Edit";
+import Editstock from "./pages/editstock/Editstock";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
 import Map from "./pages/map/Map";
-import Record from "./pages/record/Record";
+import Recordstock from "./pages/recordstock/Recordstock";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -34,7 +34,7 @@ export default function BasicExample() {
               <Link to="/adressbook">AdressBook</Link>
             </li>
             <li>
-              <Link to="/edit">Edit</Link>
+              <Link to="/edit">EditStock</Link>
             </li>
             <li>
               <Link to="/registry">Registry</Link>
@@ -46,7 +46,7 @@ export default function BasicExample() {
               <Link to="/login">Login</Link>
             </li>
             <li>
-              <Link to="/record">Record</Link>
+              <Link to="/recordstock">Record Stock</Link>
             </li>
           </ul>
 
@@ -69,17 +69,17 @@ export default function BasicExample() {
             <Route path="/adressbook">
               <AdressBook />
             </Route>
+            <Route exact path="/recordstock">
+              <Recordstock />
+            </Route>
             <Route path="/edit">
-              <Edit />
+              <Editstock />
             </Route>
             <Route path="/registry">
               <Registry />
             </Route>
             <Route path="/map">
               <Map />
-            </Route>
-            <Route path="/record">
-              <Record />
             </Route>
           </Switch>
         </div>

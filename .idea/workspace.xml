@@ -4,9 +4,9 @@
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/record/Record.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/record/Record.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/edit/Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/editstock/Editstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/record/Record.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recordstock/Recordstock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/registry/Registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/registry/Registry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +50,11 @@
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.Registry.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="Registry.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/pages/registry/Registry.js" working-dir="$PROJECT_DIR$/src/pages/registry">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -64,6 +67,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Registry.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="8873000" />
+      <workItem from="1584751174888" duration="10347000" />
     </task>
     <servers />
   </component>
@@ -87,6 +95,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584784480291" />
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1584794146511">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146511" />
+    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1584794146502">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146502" />
+    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1584794146491">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146491" />
+    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1584794146509">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146509" />
+    <state x="368" y="191" width="703" height="518" key="find.popup" timestamp="1584794122609">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="368" y="191" width="703" height="518" key="find.popup/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794122609" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584789679703">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
