@@ -4,6 +4,7 @@ import Start from "./pages/start/Start";
 import AdressBook from "./pages/adressbook/AdressBook";
 import Registry from "./pages/registry/Registry";
 import Login from "./pages/login/Login";
+import Editstock from "./pages/editstock/Editstock";
 
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
@@ -24,6 +25,9 @@ export default function BasicExample() {
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/edit">Edit Stock</Link>
                     </li>
                     <li>
                         <Link to="/adressbook">AdressBook</Link>
@@ -57,6 +61,9 @@ export default function BasicExample() {
                     </Route>
                     <Route path="/login">
                         <Login />
+                    </Route>
+                    <Route path="/edit">
+                        <Editstock />
                     </Route>
                     <Route path="/adressbook">
                         <AdressBook />
