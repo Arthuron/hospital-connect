@@ -9,6 +9,9 @@ import fetchHospitals from "./redux/reducers/hospitals/fetchHospitals";
 import {useDispatch} from "react-redux";
 import {createMuiTheme} from '@material-ui/core/styles';
 import {ThemeProvider} from '@material-ui/styles';
+import Button from '@material-ui/core/Button';
+import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
+import { makeStyles } from '@material-ui/core/styles';
 
 // Options for custom theming <3
 const theme = createMuiTheme({
@@ -22,6 +25,12 @@ const theme = createMuiTheme({
     },
 });
 
+const useStyles = makeStyles(theme => ({
+    margin: {
+        margin: theme.spacing(1),
+    }
+}));
+
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -32,9 +41,11 @@ const theme = createMuiTheme({
 // work properly.
 
 const showDebugTopNavigation = false;
+const showBackBackButton = false;
 
 export default function BasicExample() {
     const dispatch = useDispatch();
+    const classes = useStyles();
 
     React.useEffect(() => {
         dispatch(fetchHospitals());
@@ -60,6 +71,7 @@ export default function BasicExample() {
                         </ul>
                     )}
                     {showDebugTopNavigation && <hr/>}
+                    {showBackBackButton && <Button startIcon={<ArrowBackIos />} size="large" className={classes.margin}></Button>}
 
                     <Switch>
                         <Route exact path="/">
