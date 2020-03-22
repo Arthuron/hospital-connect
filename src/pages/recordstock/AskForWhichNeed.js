@@ -10,7 +10,7 @@ import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
     return (
         <LayoutWrapper
-            headline="Suche"
+            headline="Engpass melden"
             onBack={onBack}
             footer={
                 <>
@@ -26,7 +26,7 @@ const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
                         <Button
-                            color="secondary"
+                            color="primary"
                             variant="contained"
                             fullWidth={true}
                             onClick={notNeed}
@@ -38,10 +38,10 @@ const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
             }
         >
             <Box p={1} bgcolor="background.paper">
-                <Typography variant="h6" gutterBottom>
-                    {name}
-                </Typography>
-                <Typography variant="caption" display="block" gutterBottom>
+                {/*<Typography variant="h6" gutterBottom>*/}
+                {/*    {name}*/}
+                {/*</Typography>*/}
+                <Typography variant="h5" align={"center"} display="block" gutterBottom>
                     Benötigst du {needType} ?
                 </Typography>
             </Box>

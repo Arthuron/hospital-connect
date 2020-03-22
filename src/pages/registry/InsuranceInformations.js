@@ -28,15 +28,22 @@ const InsuranceInformations = ({ onNext = () => {} }, onBack) => {
                 </Box>
             }
         >
-            <Typography variant="h6" gutterBottom>
-                Erzähl uns etwas über das Krankenhaus
+            <Typography variant="h6" align={"center"} gutterBottom>
+               Bitte fülle die nachfolgenden Felder vollständig aus.
             </Typography>
+            <Box pb={1}>
+                <TextField variant="outlined" fullWidth id="contact" label="Trägerschaft" />
+            </Box>
+            <Box pb={1}>
+                <TextField variant="outlined" fullWidth id="insurance" label="Name der Klinik" />
+            </Box>
             <Box pb={1}>
                 <TextField variant="outlined" fullWidth id="contact" label="Kontaktperson" />
             </Box>
             <Box pb={1}>
-                <TextField variant="outlined" fullWidth id="insurance" label="Krankenkasse" />
+                <TextField variant="outlined" fullWidth id="contact" label="Straße und Hausnummer" />
             </Box>
+
 
             <Grid container spacing={2} p={2}>
                 <Grid item xs={6}>
