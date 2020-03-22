@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Start from "./pages/start/Start";
-import AdressBook from "./pages/adressbook/AdressBook";
-import Login from "./pages/login/Login";
 import Editstock from "./pages/editstock/Editstock";
 
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
@@ -40,19 +38,10 @@ export default function BasicExample() {
                             <Link to="/edit">Edit Stock</Link>
                         </li>
                         <li>
-                            <Link to="/adressbook">AdressBook</Link>
-                        </li>
-                        <li>
                             <Link to="/registry">Registry</Link>
                         </li>
                         <li>
                             <Link to="/map">Map</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">Login</Link>
-                        </li>
-                        <li>
-                            <Link to="/recordstock">Record Stock</Link>
                         </li>
                     </ul>
                 )}
@@ -62,14 +51,8 @@ export default function BasicExample() {
                     <Route exact path="/">
                         <Start />
                     </Route>
-                    <Route path="/login">
-                        <Login />
-                    </Route>
                     <Route path="/edit">
                         <Editstock />
-                    </Route>
-                    <Route path="/adressbook">
-                        <AdressBook />
                     </Route>
                     <Route exact path="/recordstock">
                         <RecordStockContainer />
