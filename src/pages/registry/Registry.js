@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-
 import PrivateOrInsurance from "./PrivateOrInsurance";
 import InsuranceInformations from "./InsuranceInformations";
 import PrivateInformations from "./PrivateInformations";
