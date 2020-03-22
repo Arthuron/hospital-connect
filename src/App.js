@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Start from "./pages/start/Start";
 import Editstock from "./pages/editstock/Editstock";
-
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
 import RegistryContainer from "./containers/registryContainer/RegistryContainer";

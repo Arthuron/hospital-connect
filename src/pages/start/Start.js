@@ -19,7 +19,7 @@ export default function Start() {
                     <TextField id="password" label="Passwort" type="password" autoComplete="current-password" fullWidth={true}/>
                 </Box>
                 <Box p={1} pb={0} textAlign="right">
-                    <Button color="default">
+                    <Button color="default" onClick={()=>{alert('HA HA !!!')}}>
                         Passwort vergessen
                     </Button>
                 </Box>
