@@ -80,24 +80,31 @@ const Editstock = ({ hospital, goBack }) => {
                 <Box p={0} pb={1} pt={1} bgcolor="background.paper">
                     <Divider variant="middle" />
                 </Box>
-                <Box p={1} bgcolor="background.paper">
-                    <Link to="/map">
-                        <Button color="primary" variant="contained" fullWidth={true}>
-                            Suchen
-                        </Button>
-                    </Link>
-                </Box>
-                <Box p={1} pt={0} bgcolor="background.paper">
-                    <Button color="default" variant="contained" fullWidth={true} onClick={goBack}>
-                        Zurück
-                    </Button>
-                </Box>
             </div>
         );
     };
 
     return (
-        <LayoutWrapper headline="Hilfsgüter">
+        <LayoutWrapper
+            headline="Hilfsgüter"
+            onBack={goBack}
+            footer={
+                <>
+                    <Box p={1} bgcolor="background.paper">
+                        <Link to="/map">
+                            <Button color="primary" variant="contained" fullWidth={true}>
+                                Suchen
+                            </Button>
+                        </Link>
+                    </Box>
+                    <Box p={1} pt={0} bgcolor="background.paper">
+                        <Button variant="outlined" color="secondary" fullWidth={true} disableElevation onClick={goBack}>
+                            Zurück
+                        </Button>
+                    </Box>
+                </>
+            }
+        >
             <Box p={1} bgcolor="background.paper">
                 <Typography variant="h6" gutterBottom>
                     Welche medizinischen Hilfsgüter benötigst du?

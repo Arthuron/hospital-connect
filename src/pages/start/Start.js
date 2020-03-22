@@ -6,12 +6,31 @@ import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
 export default function Start() {
     return (
-        <LayoutWrapper headline={"Anmelden"}>
+        <LayoutWrapper
+            headline={"Anmelden"}
+            footer={
+                <>
+                    <Box p={1} pt={5} bgcolor="background.paper">
+                        <Button variant="contained" color="primary" fullWidth={true} disableElevation>
+                            Anmelden
+                        </Button>
+                    </Box>
+                    <Box p={1} pt={0} bgcolor="background.paper">
+                        <Link to="/registry">
+                            <Button variant="outlined" color="secondary" fullWidth={true} disableElevation>
+                                Registrieren
+                            </Button>
+                        </Link>
+                    </Box>
+                </>
+            }
+        >
             <Box p={1} pb={0}>
-                <TextField id="username" label="Benutzer" fullWidth={true} />
+                <TextField variant="outlined" id="username" label="Benutzer" fullWidth={true} />
             </Box>
             <Box p={1} pb={0}>
                 <TextField
+                    variant="outlined"
                     id="password"
                     label="Passwort"
                     type="password"
@@ -28,18 +47,6 @@ export default function Start() {
                 >
                     Passwort vergessen
                 </Button>
-            </Box>
-            <Box p={1} pt={5} bgcolor="background.paper">
-                <Button variant="contained" color="primary" fullWidth={true}>
-                    Anmelden
-                </Button>
-            </Box>
-            <Box p={1} pt={0} bgcolor="background.paper">
-                <Link to="/registry">
-                    <Button variant="contained" color="secondary" fullWidth={true}>
-                        Registrieren
-                    </Button>
-                </Link>
             </Box>
         </LayoutWrapper>
     );

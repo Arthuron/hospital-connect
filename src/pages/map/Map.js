@@ -10,7 +10,7 @@ import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 const Map = ({ hospitals }) => {
     return (
         hospitals.length > 0 && (
-            <LayoutWrapper headline={"Deine Suchergebnisse"}>
+            <LayoutWrapper headline={"Deine Suchergebnisse"} onBack={{linkTo: '/registry'}}>
                 <Filter hospitals={hospitals}>
                     <GoogleMaps />
                     <FilterOptions />
