@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 import Map from "../../pages/map/Map";
 
 const MapContainer = ({}) => {
-    const { hospitals } = useSelector(state => state);
+    const { data } = useSelector(state => state.hospitals);
 
-    return <Map hospitals={Object.values(hospitals)} />;
+    return <Map hospitals={Object.values(data)} />;
 };
 
 MapContainer.propTypes = {};

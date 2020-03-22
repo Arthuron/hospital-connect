@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 import Recordstock from "../../pages/recordstock/Recordstock";
 
 const RecordStockContainer = ({}) => {
-    const { hospitals } = useSelector(state => state);
+    const { data } = useSelector(state => state.hospitals);
 
-    return <Recordstock hospitals={hospitals} />;
+    return <Recordstock hospitals={data} />;
 };
 
 RecordStockContainer.propTypes = {};

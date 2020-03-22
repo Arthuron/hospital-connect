@@ -2,7 +2,7 @@ import { FETCH_HOSPITALS_PENDING, FETCH_HOSPITALS_SUCCESS, FETCH_HOSPITALS_ERROR
 
 const initialState = {
     pending: false,
-    hospitals: [],
+    data: [],
     error: null
 };
 
@@ -14,11 +14,10 @@ export default function productsReducer(state = initialState, action) {
                 pending: true
             };
         case FETCH_HOSPITALS_SUCCESS:
-            console.log(action);
             return {
                 ...state,
                 pending: false,
-                hospitals: action.hospitals
+                data: action.hospitals
             };
         case FETCH_HOSPITALS_ERROR:
             return {

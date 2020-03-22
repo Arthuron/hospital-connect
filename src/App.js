@@ -26,36 +26,37 @@ export default function BasicExample() {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
-        console.log(fetchHospitals);
         dispatch(fetchHospitals());
     }, [dispatch]);
     return (
         <Router>
             <div>
-                {showDebugTopNavigation &&<ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/edit">Edit Stock</Link>
-                    </li>
-                    <li>
-                        <Link to="/adressbook">AdressBook</Link>
-                    </li>
-                    <li>
-                        <Link to="/registry">Registry</Link>
-                    </li>
-                    <li>
-                        <Link to="/map">Map</Link>
-                    </li>
-                    <li>
-                        <Link to="/login">Login</Link>
-                    </li>
-                    <li>
-                        <Link to="/recordstock">Record Stock</Link>
-                    </li>
-                </ul>}
-                {showDebugTopNavigation &&<hr />}
+                {showDebugTopNavigation && (
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/edit">Edit Stock</Link>
+                        </li>
+                        <li>
+                            <Link to="/adressbook">AdressBook</Link>
+                        </li>
+                        <li>
+                            <Link to="/registry">Registry</Link>
+                        </li>
+                        <li>
+                            <Link to="/map">Map</Link>
+                        </li>
+                        <li>
+                            <Link to="/login">Login</Link>
+                        </li>
+                        <li>
+                            <Link to="/recordstock">Record Stock</Link>
+                        </li>
+                    </ul>
+                )}
+                {showDebugTopNavigation && <hr />}
 
                 <Switch>
                     <Route exact path="/">

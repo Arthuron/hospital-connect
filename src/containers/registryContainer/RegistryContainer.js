@@ -4,9 +4,9 @@ import { useSelector } from "react-redux";
 import Registry from "../../pages/registry/Registry";
 
 const RegistryContainer = ({}) => {
-    const { hospitals } = useSelector(state => state);
+    const { data } = useSelector(state => state.hospitals);
 
-    return <Registry hospitals={hospitals} />;
+    return <Registry hospitals={data} />;
 };
 
 RegistryContainer.propTypes = {};
