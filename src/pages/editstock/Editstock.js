@@ -97,7 +97,7 @@ const Editstock = ({ hospital, goBack }) => {
                         </Link>
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button color="default" variant="contained" fullWidth={true} onClick={goBack}>
+                        <Button variant="outlined" color="secondary" fullWidth={true} disableElevation onClick={goBack}>
                             Zurück
                         </Button>
                     </Box>

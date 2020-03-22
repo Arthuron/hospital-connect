@@ -14,12 +14,12 @@ const ChooseKindOfRequest = ({ name, need }) => {
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
-                        <Button color="default" variant="contained" fullWidth={true} onClick={need}>
+                        <Button variant="contained" color="primary" fullWidth={true} onClick={need}>
                             Ich Brauche
                         </Button>
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button color="default" variant="contained" fullWidth={true}>
+                        <Button variant="outlined" color="secondary" fullWidth={true}>
                             Ich Biete
                         </Button>
                     </Box>

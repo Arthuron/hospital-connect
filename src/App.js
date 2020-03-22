@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Start from "./pages/start/Start";
+import Splash from "./pages/splash/Splash";
 import Editstock from "./pages/editstock/Editstock";
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
@@ -72,6 +73,7 @@ export default function BasicExample() {
     React.useEffect(() => {
         dispatch(fetchHospitals());
     }, [dispatch]);
+
     return (
         <Router>
             <ThemeProvider theme={theme}>
@@ -99,6 +101,9 @@ export default function BasicExample() {
 
                     <Switch>
                         <Route exact path="/">
+                            <Splash />
+                        </Route>
+                        <Route exact path="/login">
                             <Start />
                         </Route>
                         <Route path="/edit">

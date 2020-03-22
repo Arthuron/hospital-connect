@@ -15,9 +15,10 @@ const InsuranceInformations = ({ onNext = () => {} }) => {
             footer={
                 <Box pb={1}>
                     <Button
-                        color="default"
                         variant="contained"
+                        color="primary"
                         fullWidth={true}
+                        disableElevation
                         component={RouterLink}
                         to="/recordstock"
                     >

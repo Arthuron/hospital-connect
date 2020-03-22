@@ -17,12 +17,18 @@ const PrivateOrInsurance = ({ onNext = () => {} }) => {
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
-                        <Button color="default" variant="contained" fullWidth={true} onClick={handleClick}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            fullWidth={true}
+                            disableElevation
+                            onClick={handleClick}
+                        >
                             Private Person
                         </Button>
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button color="default" variant="contained" fullWidth={true} onClick={onNext}>
+                        <Button variant="outlined" color="secondary" fullWidth={true} disableElevation onClick={onNext}>
                             Krankenhaus
                         </Button>
                     </Box>

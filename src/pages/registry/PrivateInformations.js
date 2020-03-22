@@ -18,13 +18,14 @@ const PrivateInformations = ({ onNext = () => {} }) => {
             footer={
                 <>
                     <Box pb={1}>
-                        <TextField fullWidth id="telefon" label="Telefon" />
-                    </Box>
-                    <Box pb={1}>
-                        <TextField fullWidth id="email" label="E-Mail" />
-                    </Box>
-                    <Box pb={1}>
-                        <Button color="default" variant="contained" fullWidth={true} component={RouterLink} to="/map">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            fullWidth={true}
+                            disableElevation
+                            component={RouterLink}
+                            to="/map"
+                        >
                             Jetzt registrieren
                         </Button>
                     </Box>
@@ -61,6 +62,12 @@ const PrivateInformations = ({ onNext = () => {} }) => {
                     </Box>
                 </Grid>
             </Grid>
+            <Box pb={1}>
+                <TextField fullWidth id="telefon" label="Telefon" />
+            </Box>
+            <Box pb={1}>
+                <TextField fullWidth id="email" label="E-Mail" />
+            </Box>
         </LayoutWrapper>
     );
 };
