@@ -8,6 +8,22 @@ import RegistryContainer from "./containers/registryContainer/RegistryContainer"
 import fetchHospitals from "./redux/reducers/hospitals/fetchHospitals";
 import { useDispatch } from "react-redux";
 
+
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+import { purple } from '@material-ui/core/colors';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#0f0f0f',
+        },
+        secondary: {
+            main: '#FFD600'
+        }
+    },
+});
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -26,7 +42,9 @@ export default function BasicExample() {
         dispatch(fetchHospitals());
     }, [dispatch]);
     return (
+
         <Router>
+            <ThemeProvider theme={theme}>
             <div>
                 {showDebugTopNavigation && (
                     <ul>
@@ -64,6 +82,7 @@ export default function BasicExample() {
                     </Route>
                 </Switch>
             </div>
+            </ThemeProvider>
         </Router>
     );
 }

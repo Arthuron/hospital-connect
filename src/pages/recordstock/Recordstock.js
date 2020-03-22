@@ -36,7 +36,7 @@ const Recordstock = ({hospitals}) => {
             <AskForWhichNeed
                 name={hospital.name}
                 needType={'Personal'}
-                need={_decrementFlowStatus}
+                need={''}
                 notNeed={_incrementFlowStatus}
             />}
             {clickFlowStatus === 2 &&
@@ -44,7 +44,7 @@ const Recordstock = ({hospitals}) => {
                 name={hospital.name}
                 needType={'Hilfsmittel'}
                 need={_incrementFlowStatus}
-                notNeed={_decrementFlowStatus}
+                notNeed={''}
             />}
             {clickFlowStatus === 3 &&
             <Editstock

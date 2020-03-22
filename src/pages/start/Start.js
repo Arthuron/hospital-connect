@@ -29,9 +29,10 @@ export default function Start() {
                     </Button>
                 </Box>
                 <Box p={1} pt={0} bgcolor="background.paper">
-                    <Link to="/registry"><Button variant="outlined" color="primary" fullWidth={true}>
-                        Registrieren
-                    </Button>
+                    <Link to="/registry">
+                        <Button variant="contained" color="secondary" fullWidth={true}>
+                            Registrieren
+                        </Button>
                     </Link>
                 </Box>
             </Container>
