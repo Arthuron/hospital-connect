@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="72c9ef25-7d93-4b30-a32f-1ea4287b0b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/start/Start.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/Filter/FilerOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/Filter/FilerOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/GoogleMaps/GoogleMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/GoogleMaps/GoogleMaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/HospitalBox/HospitalBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/HospitalBox/HospitalBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/map/components/HospitalBoxes/HospitalBoxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/map/components/HospitalBoxes/HospitalBoxes.js" afterDir="false" />
+=======
+    <list default="true" id="2ffd95c6-0f3e-4f04-bd57-df992b501f7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MapContainer/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/mapContainer/MapContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/start/Start.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/start/Start.js" afterDir="false" />
+>>>>>>> 606c312b3d1990a77754e8677ccdd8dc372a8950
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZPqeZDjtDcUWElA1vMMWgZnGbK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/containers/RecordStockContainer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -34,9 +48,26 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/RecordStockContainer" />
+      <recent name="$PROJECT_DIR$/src/pages/registry" />
+      <recent name="$PROJECT_DIR$/src/pages/record" />
+      <recent name="$PROJECT_DIR$/src/pages/map" />
+      <recent name="$PROJECT_DIR$/src/pages/login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="Registry.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/pages/registry/Registry.js" working-dir="$PROJECT_DIR$/src/pages/registry">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -49,6 +80,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Registry.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -60,11 +108,88 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584751172400</updated>
-      <workItem from="1584751174888" duration="1788000" />
+      <workItem from="1584751174888" duration="27512000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584784480291">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="454" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584784480291" />
+    <state x="460" y="295" width="519" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584805597995">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="460" y="295" width="519" height="316" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584805597995" />
+<<<<<<< HEAD
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1584827085418">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827085418" />
+    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1584827085415">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827085415" />
+    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1584827085413">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827085413" />
+    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1584827085416">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827085416" />
+=======
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom" timestamp="1584827548795">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146511" />
+    <state width="1259" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827548795" />
+    <state width="1259" height="197" key="GridCell.Tab.0.center" timestamp="1584827548794">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146502" />
+    <state width="1259" height="197" key="GridCell.Tab.0.center/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827548794" />
+    <state width="1259" height="197" key="GridCell.Tab.0.left" timestamp="1584827548793">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146491" />
+    <state width="1259" height="197" key="GridCell.Tab.0.left/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827548793" />
+    <state width="1259" height="197" key="GridCell.Tab.0.right" timestamp="1584827548794">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794146509" />
+    <state width="1259" height="197" key="GridCell.Tab.0.right/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827548794" />
+    <state x="351" y="134" key="MultipleFileMergeDialog" timestamp="1584827113468">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="351" y="134" key="MultipleFileMergeDialog/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827113468" />
+>>>>>>> 606c312b3d1990a77754e8677ccdd8dc372a8950
+    <state x="221" y="89" key="SettingsEditor" timestamp="1584795859687">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584795859687" />
+    <state x="368" y="191" width="703" height="518" key="find.popup" timestamp="1584794122609">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="368" y="191" width="703" height="518" key="find.popup/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584794122609" />
+    <state x="437" y="236" key="git4idea.merge.GitMergeDialog" timestamp="1584827807688">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="437" y="236" key="git4idea.merge.GitMergeDialog/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584827807688" />
+    <state x="311" y="210" key="git4idea.merge.GitPullDialog" timestamp="1584826923662">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="311" y="210" key="git4idea.merge.GitPullDialog/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584826923662" />
+    <state x="374" y="266" key="git4idea.ui.GitUnstashDialog" timestamp="1584827113668">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="374" y="266" key="git4idea.ui.GitUnstashDialog/0.23.1280.777/1280.-296.1920.1057@0.23.1280.777" timestamp="1584827113668" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1584789679703">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-939.-1440.3440.1440@0.0.1440.900" timestamp="1584789679703" />
   </component>
 </project>

@@ -1,0 +1,11 @@
+.googleMaps{
+    width: 100%;
+}
+
+.marker{
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+   }
