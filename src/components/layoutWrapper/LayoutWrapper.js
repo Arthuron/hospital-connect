@@ -6,7 +6,6 @@ import Logo from "./logo.svg";
 const LayoutWrapper = ({ children, headline }) => {
     const useStyles = makeStyles(theme => ({
         root: props => {
-            console.log(theme.palette);
             return {
                 borderBottom: "1px solid",
                 borderBottomColor: theme.palette.primary.main,
@@ -21,8 +20,9 @@ const LayoutWrapper = ({ children, headline }) => {
             };
         },
         pageWrapper: {
-            width: 500,
-            margin: "0 auto"
+            maxWidth: 500,
+            margin: "0 auto",
+            padding: 10
         },
         header: {
             margin: "40px auto 40px auto",
