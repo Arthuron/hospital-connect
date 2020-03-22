@@ -24,13 +24,14 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
             footer={
                 <>
                     <Box pb={1}>
-                        <TextField fullWidth id="telefon" label="Telefon" />
-                    </Box>
-                    <Box pb={1}>
-                        <TextField fullWidth id="email" label="E-Mail" />
-                    </Box>
-                    <Box pb={1}>
-                        <Button color="default" variant="contained" fullWidth={true} component={RouterLink} to="/map">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            fullWidth={true}
+                            disableElevation
+                            component={RouterLink}
+                            to="/map"
+                        >
                             Jetzt registrieren
                         </Button>
                     </Box>
@@ -41,7 +42,7 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
                 Erzähl uns etwas über dich
             </Typography>
             <Box pb={1}>
-                <TextField fullWidth id="contact" label="Name und Nachname" />
+                <TextField variant="outlined" fullWidth id="contact" label="Name und Nachname" />
             </Box>
             <Box pb={1}>
                 <FormControl fullWidth>
@@ -58,15 +59,21 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
             <Grid container spacing={2} p={2}>
                 <Grid item xs={6}>
                     <Box pb={1}>
-                        <TextField fullWidth id="postalcode" label="Plz" />
+                        <TextField variant="outlined" fullWidth id="postalcode" label="Plz" />
                     </Box>
                 </Grid>
                 <Grid item xs={6}>
                     <Box pb={1}>
-                        <TextField fullWidth id="city" label="Ort" />
+                        <TextField variant="outlined" fullWidth id="city" label="Ort" />
                     </Box>
                 </Grid>
             </Grid>
+            <Box pb={1}>
+                <TextField variant="outlined" fullWidth id="telefon" label="Telefon" />
+            </Box>
+            <Box pb={1}>
+                <TextField variant="outlined" fullWidth id="email" label="E-Mail" />
+            </Box>
         </LayoutWrapper>
     );
 };
