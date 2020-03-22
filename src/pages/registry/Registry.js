@@ -3,7 +3,6 @@ import Container from "@material-ui/core/Container";
 import PrivateOrInsurance from "./PrivateOrInsurance";
 import InsuranceInformations from "./InsuranceInformations";
 import PrivateInformations from "./PrivateInformations";
-import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
 const Registry = ({ hospitals }) => {
     const [clickFlowStatus, setclickFlowStatus] = React.useState(0);
@@ -16,11 +15,11 @@ const Registry = ({ hospitals }) => {
     };
 
     return (
-        <LayoutWrapper headline={"Registrieren"}>
+        <>
             {clickFlowStatus === 0 && <PrivateOrInsurance onNext={_incrementFlowStatus} />}
             {clickFlowStatus === 1 && <InsuranceInformations onNext={() => {}} />}
             {clickFlowStatus === 2 && <PrivateInformations onNext={() => {}} />}
-        </LayoutWrapper>
+        </>
     );
 };
 

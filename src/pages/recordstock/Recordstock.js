@@ -28,7 +28,7 @@ const Recordstock = ({ hospitals }) => {
         return <Editstock hospital={hospital} goBack={_decrementFlowStatus} />;
     }
     return (
-        <LayoutWrapper headline="Suche">
+        <>
             {clickFlowStatus === 0 && (
                 <ChooseKindOfRequest name={hospital.name} need={_incrementFlowStatus} offer={""} />
             )}
@@ -43,7 +43,7 @@ const Recordstock = ({ hospitals }) => {
                     notNeed={""}
                 />
             )}
-        </LayoutWrapper>
+        </>
     );
 };
 

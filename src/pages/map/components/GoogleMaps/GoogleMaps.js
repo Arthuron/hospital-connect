@@ -38,7 +38,7 @@ const GoogleMaps = () => {
     const { filterResults } = React.useContext(FilterContext);
     return (
         <div className={styles.googleMaps}>
-            <div style={{ height: 600, width: "100%" }}>
+            <div style={{ height: 400, width: "100%" }}>
                 <GoogleMapReact
                     bootstrapURLKeys={{ key: "AIzaSyCU_R5SVAK41jJCURdBu9xA1vfZktjXvEo" }}
                     defaultCenter={defaultProps.center}

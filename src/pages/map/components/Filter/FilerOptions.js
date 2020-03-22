@@ -18,7 +18,7 @@ const FilterOptions = ({}) => {
             <div className={styles.filterContent}>
                 <FormControl component="fieldset">
                     <FormLabel component="legend">Filter Options</FormLabel>
-                    <FormGroup>
+                    <FormGroup row>
                         {Object.entries(filterOptions).map(([key, value]) => (
                             <FormControlLabel
                                 key={key}
