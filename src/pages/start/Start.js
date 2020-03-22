@@ -31,7 +31,8 @@ export default function Start() {
                 <Box p={1} pt={0} bgcolor="background.paper">
                     <Link to="/registry"><Button variant="outlined" color="primary" fullWidth={true}>
                         Registrieren
-                    </Button></Link>
+                    </Button>
+                    </Link>
                 </Box>
             </Container>
         </Container>

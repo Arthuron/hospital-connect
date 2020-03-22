@@ -18,7 +18,7 @@ import RegistryContainer from "./containers/registryContainer/RegistryContainer"
 // making sure things like the back button and bookmarks
 // work properly.
 
-const showDebugTopNavigation = false;
+const showDebugTopNavigation = true;
 
 export default function BasicExample() {
     return (

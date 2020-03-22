@@ -12,7 +12,7 @@ const Registry = ({ hospitals }) => {
     const hospital = hospitals[userID];
 
     const _incrementFlowStatus = (index=1) => {
-        setclickFlowStatus(clickFlowStatus + index);
+        setclickFlowStatus(clickFlowStatus + (typeof index !== "string") ? 1 : index);
     };
     const _decrementFlowStatus = () => {
         setclickFlowStatus(clickFlowStatus - 1);
