@@ -20,7 +20,7 @@ import { useDispatch } from "react-redux";
 // making sure things like the back button and bookmarks
 // work properly.
 
-const showDebugTopNavigation = true;
+const showDebugTopNavigation = false;
 
 export default function BasicExample() {
     const dispatch = useDispatch();
