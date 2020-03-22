@@ -26,10 +26,11 @@ export default function Start() {
             }
         >
             <Box p={1} pb={0}>
-                <TextField id="username" label="Benutzer" fullWidth={true} />
+                <TextField variant="outlined" id="username" label="Benutzer" fullWidth={true} />
             </Box>
             <Box p={1} pb={0}>
                 <TextField
+                    variant="outlined"
                     id="password"
                     label="Passwort"
                     type="password"
