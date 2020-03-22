@@ -8,6 +8,8 @@ import Editstock from "./pages/editstock/Editstock";
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
 import RegistryContainer from "./containers/registryContainer/RegistryContainer";
+import fetchHospitals from "./redux/reducers/hospitals/fetchHospitals";
+import { useDispatch } from "react-redux";
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -21,6 +23,12 @@ import RegistryContainer from "./containers/registryContainer/RegistryContainer"
 const showDebugTopNavigation = true;
 
 export default function BasicExample() {
+    const dispatch = useDispatch();
+
+    React.useEffect(() => {
+        console.log(fetchHospitals);
+        dispatch(fetchHospitals());
+    }, [dispatch]);
     return (
         <Router>
             <div>
@@ -49,13 +57,6 @@ export default function BasicExample() {
                 </ul>}
                 {showDebugTopNavigation &&<hr />}
 
-                {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
                 <Switch>
                     <Route exact path="/">
                         <Start />
