@@ -6,12 +6,13 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
+import DialogBoxForButton from "../../components/dialogBoxForButton/DialogBoxForButton";
 
 const ChooseKindOfRequest = ({ name, need, onBack }) => {
     return (
         <LayoutWrapper
             headline="Bitte wähle aus"
-            onBack={{linkTo: '/registry'}}
+            onBack={{ linkTo: "/registry" }}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
@@ -20,9 +21,14 @@ const ChooseKindOfRequest = ({ name, need, onBack }) => {
                         </Button>
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button variant="contained" color="primary" fullWidth={true}>
-                            Unterstützung anbieten
-                        </Button>
+                        <DialogBoxForButton
+                            buttonProps={{
+                                variant: "contained",
+                                color: "primary",
+                                fullWidth: true
+                            }}
+                            buttonLabel="Unterstützung anbieten"
+                        />
                     </Box>
                 </>
             }
