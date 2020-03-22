@@ -4,7 +4,7 @@
     align-items: center;
 
     padding: 24px 0;
-    border-top: 1px solid;
+    border-top: 1px solid #ccc;
 }
 
 .tel{
@@ -30,22 +30,42 @@
     margin-right:  8px;
 }
 
-.green{
-    background-color: green;
+.offer, .ok, .need{
+    display: flex;
+    align-items: center;
+}
+.offer :global(.MuiSlider-thumb){
+    border: 2px solid green;
+    background: #fff; 
+       width: 14px !important;
+    height: 14px !important;
+    margin-top: -6px !important;
+    margin-left: -7px !important;
 }
 
-.orange{
-    background-color: orange;
+.ok :global(.MuiSlider-thumb){
+    border: 2px solid orange;
+    background: #fff;
+    width: 14px !important;
+    height: 14px !important;
+    margin-top: -6px !important;
+    margin-left: -7px !important;
 }
 
-.red{
-    background-color: red;
+.need :global(.MuiSlider-thumb){
+    border: 2px solid #f00;
+    background: #fff;
+    width: 14px !important;
+    height: 14px !important;
+    margin-top: -6px !important;
+    margin-left: -7px !important;
 }
 
 
 .hilfsmittel{
     flex-basis: 100%;
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -53,4 +73,13 @@
     display: flex;
     padding: 4px 0;
     align-items: center;
+}
+
+
+.label{
+    width: 35%;
+}
+
+.button{
+    text-align: center;
 }

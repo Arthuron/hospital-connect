@@ -25,20 +25,23 @@ const PrivateOrInsurance = ({ onNext = () => {}}) => {
                             disableElevation
                             onClick={handleClick}
                         >
-                            Private Person
+                            Privatperson
                         </Button>
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button variant="outlined" color="secondary" fullWidth={true} disableElevation onClick={onNext}>
-                            Krankenhaus
+                        <Button variant="contained" color="primary" fullWidth={true} disableElevation onClick={onNext}>
+                            Klinik
                         </Button>
                     </Box>
                 </>
             }
         >
             <Box p={1} bgcolor="background.paper">
-                <Typography variant="h6" gutterBottom>
-                    Bist du eine Privatperson oder möchtest du ein Krankenhaus anmelden?
+                <Typography variant="h5" align={"center"} gutterBottom>
+                    Bitte wähle aus
+                </Typography>
+                <Typography variant="h6" align={"center"} gutterBottom>
+                    Bist du eine private Person und  möchtest deine Hilfe anbieten? Oder  möchtest du dich im Namen einer Klinik registrieren?
                 </Typography>
             </Box>
         </LayoutWrapper>

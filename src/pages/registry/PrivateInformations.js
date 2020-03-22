@@ -38,8 +38,8 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
                 </>
             }
         >
-            <Typography variant="h6" gutterBottom>
-                Erzähl uns etwas über dich
+            <Typography variant="h6" align={"center"} gutterBottom>
+                Bitte mach Angaben zu deiner Person
             </Typography>
             <Box pb={1}>
                 <TextField variant="outlined" fullWidth id="contact" label="Name und Nachname" />
