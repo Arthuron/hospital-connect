@@ -6,15 +6,21 @@ import Box from "@material-ui/core/Box";
 import { Link as RouterLink } from "react-router-dom";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const PrivateInformations = ({ onNext = () => {} }) => {
+const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
     const [support, setSupport] = React.useState("");
 
     const handleChange = event => {
         setSupport(event.target.value);
     };
+
+    const handleClickBack = () => {
+        onBack(2);
+    };
+
     return (
         <LayoutWrapper
             headline={"Registrieren"}
+            onBack={{linkTo: '/'}}
             footer={
                 <>
                     <Box pb={1}>

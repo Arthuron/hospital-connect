@@ -87,6 +87,7 @@ const Editstock = ({ hospital, goBack }) => {
     return (
         <LayoutWrapper
             headline="Hilfsgüter"
+            onBack={goBack}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">

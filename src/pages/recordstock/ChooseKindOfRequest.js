@@ -7,10 +7,11 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const ChooseKindOfRequest = ({ name, need }) => {
+const ChooseKindOfRequest = ({ name, need, onBack }) => {
     return (
         <LayoutWrapper
             headline="Suche"
+            onBack={{linkTo: '/registry'}}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">

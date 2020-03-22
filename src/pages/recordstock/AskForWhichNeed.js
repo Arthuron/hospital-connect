@@ -7,10 +7,11 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const AskForWhichNeed = ({ name, needType, need, notNeed }) => {
+const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
     return (
         <LayoutWrapper
             headline="Suche"
+            onBack={onBack}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
@@ -18,9 +19,7 @@ const AskForWhichNeed = ({ name, needType, need, notNeed }) => {
                             color="primary"
                             variant="contained"
                             fullWidth={true}
-                            onClick={() => {
-                                need();
-                            }}
+                            onClick={need}
                         >
                             Ja
                         </Button>
@@ -30,9 +29,7 @@ const AskForWhichNeed = ({ name, needType, need, notNeed }) => {
                             color="secondary"
                             variant="contained"
                             fullWidth={true}
-                            onClick={() => {
-                                notNeed();
-                            }}
+                            onClick={notNeed}
                         >
                             Nein
                         </Button>

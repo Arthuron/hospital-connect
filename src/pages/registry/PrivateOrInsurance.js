@@ -7,13 +7,14 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const PrivateOrInsurance = ({ onNext = () => {} }) => {
+const PrivateOrInsurance = ({ onNext = () => {}}) => {
     const handleClick = () => {
         onNext(2);
     };
     return (
         <LayoutWrapper
             headline={"Registrieren"}
+            onBack={{linkTo: '/'}}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">

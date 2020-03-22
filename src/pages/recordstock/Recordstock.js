@@ -30,10 +30,10 @@ const Recordstock = ({ hospitals }) => {
     return (
         <>
             {clickFlowStatus === 0 && (
-                <ChooseKindOfRequest name={hospital.name} need={_incrementFlowStatus} offer={""} />
+                <ChooseKindOfRequest name={hospital.name} need={_incrementFlowStatus} offer={""} onBack={_incrementFlowStatus}/>
             )}
             {clickFlowStatus === 1 && (
-                <AskForWhichNeed name={hospital.name} needType={"Personal"} need={""} notNeed={_incrementFlowStatus} />
+                <AskForWhichNeed name={hospital.name} needType={"Personal"} need={""} notNeed={()=>{_incrementFlowStatus()}} onBack={()=>{_decrementFlowStatus()}}/>
             )}
             {clickFlowStatus === 2 && (
                 <AskForWhichNeed
@@ -41,6 +41,7 @@ const Recordstock = ({ hospitals }) => {
                     needType={"Hilfsmittel"}
                     need={_incrementFlowStatus}
                     notNeed={""}
+                    onBack={_decrementFlowStatus}
                 />
             )}
         </>

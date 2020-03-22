@@ -8,10 +8,11 @@ import Box from "@material-ui/core/Box";
 import { Link as RouterLink } from "react-router-dom";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const InsuranceInformations = ({ onNext = () => {} }) => {
+const InsuranceInformations = ({ onNext = () => {} }, onBack) => {
     return (
         <LayoutWrapper
             headline={"Registrieren"}
+            onBack={ {linkTo: '/'} }
             footer={
                 <Box pb={1}>
                     <Button

@@ -13,12 +13,15 @@ const Registry = ({ hospitals }) => {
     const _incrementFlowStatus = (index = 1) => {
         setclickFlowStatus(clickFlowStatus + (typeof index !== "number") ? 1 : index);
     };
+    const _decrementFlowStatus = (index = 1) => {
+        setclickFlowStatus(clickFlowStatus - (typeof index !== "number") ? 1 : index);
+    };
 
     return (
         <>
-            {clickFlowStatus === 0 && <PrivateOrInsurance onNext={_incrementFlowStatus} />}
-            {clickFlowStatus === 1 && <InsuranceInformations onNext={() => {}} />}
-            {clickFlowStatus === 2 && <PrivateInformations onNext={() => {}} />}
+            {clickFlowStatus === 0 && <PrivateOrInsurance onNext={_incrementFlowStatus}/>}
+            {clickFlowStatus === 1 && <InsuranceInformations onNext={() => {}} onBack={_decrementFlowStatus}/>}
+            {clickFlowStatus === 2 && <PrivateInformations onNext={() => {}} onBack={() => {}} />}
         </>
     );
 };
