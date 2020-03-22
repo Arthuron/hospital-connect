@@ -41,7 +41,13 @@ const InsuranceInformations = ({ onNext = () => {} }) => {
                     <TextField fullWidth id="email" label="E-Mail" />
                 </Box>
                 <Box pb={1}>
-                    <Button color="default" variant="contained" fullWidth={true} component={RouterLink} to="/">
+                    <Button
+                        color="default"
+                        variant="contained"
+                        fullWidth={true}
+                        component={RouterLink}
+                        to="/recordstock"
+                    >
                         Jetzt registrieren
                     </Button>
                 </Box>
