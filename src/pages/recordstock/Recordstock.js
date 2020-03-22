@@ -1,11 +1,11 @@
 import React from "react";
-import Container from '@material-ui/core/Container';
+import Container from "@material-ui/core/Container";
 import ChooseKindOfRequest from "./ChooseKindOfRequest";
 import AskForWhichNeed from "./AskForWhichNeed";
 import Editstock from "../editstock/Editstock";
+import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const Recordstock = ({hospitals}) => {
-
+const Recordstock = ({ hospitals }) => {
     // clickFlowStatus:
     // 0 = init
     // 1 = HR request
@@ -14,7 +14,7 @@ const Recordstock = ({hospitals}) => {
     const [clickFlowStatus, setclickFlowStatus] = React.useState(0);
 
     // fake ID - muss spaeter durch einen login bekannt sein.
-    const userID = '42';
+    const userID = "42";
     const hospital = hospitals[userID];
 
     const _incrementFlowStatus = () => {
@@ -25,33 +25,23 @@ const Recordstock = ({hospitals}) => {
     };
 
     return (
-        <Container fixed>
-            {clickFlowStatus === 0 &&
-            <ChooseKindOfRequest
-                name={hospital.name}
-                need={_incrementFlowStatus}
-                offer={''}
-            />}
-            {clickFlowStatus === 1 &&
-            <AskForWhichNeed
-                name={hospital.name}
-                needType={'Personal'}
-                need={''}
-                notNeed={_incrementFlowStatus}
-            />}
-            {clickFlowStatus === 2 &&
-            <AskForWhichNeed
-                name={hospital.name}
-                needType={'Hilfsmittel'}
-                need={_incrementFlowStatus}
-                notNeed={''}
-            />}
-            {clickFlowStatus === 3 &&
-            <Editstock
-                hospital={hospital}
-                goBack={_decrementFlowStatus}
-            />}
-        </Container>
+        <LayoutWrapper headline="Suche">
+            {clickFlowStatus === 0 && (
+                <ChooseKindOfRequest name={hospital.name} need={_incrementFlowStatus} offer={""} />
+            )}
+            {clickFlowStatus === 1 && (
+                <AskForWhichNeed name={hospital.name} needType={"Personal"} need={""} notNeed={_incrementFlowStatus} />
+            )}
+            {clickFlowStatus === 2 && (
+                <AskForWhichNeed
+                    name={hospital.name}
+                    needType={"Hilfsmittel"}
+                    need={_incrementFlowStatus}
+                    notNeed={""}
+                />
+            )}
+            {clickFlowStatus === 3 && <Editstock hospital={hospital} goBack={_decrementFlowStatus} />}
+        </LayoutWrapper>
     );
 };
 

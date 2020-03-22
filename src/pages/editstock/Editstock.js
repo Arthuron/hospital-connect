@@ -1,36 +1,36 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import Radio from '@material-ui/core/Radio';
-import {withStyles} from '@material-ui/core/styles';
-import {green} from '@material-ui/core/colors';
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import Radio from "@material-ui/core/Radio";
+import { withStyles } from "@material-ui/core/styles";
+import { green } from "@material-ui/core/colors";
 import Divider from "@material-ui/core/Divider";
-import {Button} from "@material-ui/core";
-import {Link} from "react-router-dom";
-
+import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        width: '100%',
+        width: "100%",
         height: 400,
         maxWidth: 300,
-        backgroundColor: theme.palette.background.paper,
-    },
+        backgroundColor: theme.palette.background.paper
+    }
 }));
 
 const GreenRadio = withStyles({
     root: {
         color: green[400],
-        '&$checked': {
-            color: green[600],
-        },
+        "&$checked": {
+            color: green[600]
+        }
     },
-    checked: {},
+    checked: {}
 })(props => <Radio color="default" {...props} />);
 
 const MyListItem = (name, status, index) => {
@@ -41,64 +41,65 @@ const MyListItem = (name, status, index) => {
     };
     return (
         <ListItem key={index}>
-            <ListItemText primary={name}/>
+            <ListItemText primary={name} />
             <Radio
-                checked={selectedValue === 'need' + index}
+                checked={selectedValue === "need" + index}
                 onChange={handleChange}
-                value={'need' + index}
+                value={"need" + index}
                 name="radio-button-demo"
-                inputProps={{'aria-label': 'Need'}}
+                inputProps={{ "aria-label": "Need" }}
             />
 
             <Radio
-                checked={selectedValue === 'ok' + index}
+                checked={selectedValue === "ok" + index}
                 onChange={handleChange}
-                value={'ok' + index}
+                value={"ok" + index}
                 color="default"
                 name="radio-button-demo"
-                inputProps={{'aria-label': 'Ok'}}
+                inputProps={{ "aria-label": "Ok" }}
             />
 
             <GreenRadio
-                checked={selectedValue === 'offer' + index}
+                checked={selectedValue === "offer" + index}
                 onChange={handleChange}
-                value={'offer' + index}
+                value={"offer" + index}
                 name="radio-button-demo"
-                inputProps={{'aria-label': 'Offer'}}
+                inputProps={{ "aria-label": "Offer" }}
             />
         </ListItem>
-    )
-}
+    );
+};
 
-
-const Editstock = ({hospital,goBack}) => {
-
+const Editstock = ({ hospital, goBack }) => {
     const classes = useStyles();
 
     let listItems = () => {
-        const listItems = hospital.hilfsmittel.map((item, index) =>
-            MyListItem(item.name, item.status, index)
-        );
+        const listItems = hospital.hilfsmittel.map((item, index) => MyListItem(item.name, item.status, index));
         return (
             <div className={classes.root}>
                 {listItems}
 
                 <Box p={0} pb={1} pt={1} bgcolor="background.paper">
-                    <Divider variant="middle"/>
+                    <Divider variant="middle" />
                 </Box>
                 <Box p={1} bgcolor="background.paper">
-                    <Link to="/map"><Button color="primary" variant="contained" fullWidth={true}>Suchen</Button></Link>
+                    <Link to="/map">
+                        <Button color="primary" variant="contained" fullWidth={true}>
+                            Suchen
+                        </Button>
+                    </Link>
                 </Box>
                 <Box p={1} pt={0} bgcolor="background.paper">
-                   <Button color="default" variant="contained" fullWidth={true} onClick={goBack}>Zurück</Button>
+                    <Button color="default" variant="contained" fullWidth={true} onClick={goBack}>
+                        Zurück
+                    </Button>
                 </Box>
             </div>
         );
     };
 
     return (
-        <Container fixed>
-
+        <LayoutWrapper headline="Hilfsgüter">
             <Box p={1} bgcolor="background.paper">
                 <Typography variant="h6" gutterBottom>
                     Welche medizinischen Hilfsgüter benötigst du?
@@ -108,7 +109,7 @@ const Editstock = ({hospital,goBack}) => {
             <Box p={1} bgcolor="background.paper">
                 {listItems}
             </Box>
-        </Container>
+        </LayoutWrapper>
     );
 };
 Editstock.propTypes = {

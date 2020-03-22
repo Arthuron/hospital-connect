@@ -1,33 +1,61 @@
 import React from "react";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Start from "./pages/start/Start";
 import Editstock from "./pages/editstock/Editstock";
 import RecordStockContainer from "./containers/recordStockContainer/RecordStockContainer";
 import MapContainer from "./containers/mapContainer/MapContainer";
 import RegistryContainer from "./containers/registryContainer/RegistryContainer";
 import fetchHospitals from "./redux/reducers/hospitals/fetchHospitals";
-import {useDispatch} from "react-redux";
-import {createMuiTheme} from '@material-ui/core/styles';
-import {ThemeProvider} from '@material-ui/styles';
-import Button from '@material-ui/core/Button';
-import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
-import { makeStyles } from '@material-ui/core/styles';
 
-// Options for custom theming <3
+import { useDispatch } from "react-redux";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
+import Button from "@material-ui/core/Button";
+import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
+
+import { makeStyles } from "@material-ui/core/styles";
+
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#0f0f0f',
+            main: "#ff5722"
         },
         secondary: {
-            main: '#FFD600'
+            main: "#fff",
+            contrastText: "#ff5722"
         }
+        // error: will use the default color
     },
+    overrides: {
+        MuiButton: {
+            // Name of the rule
+
+            outlined: {
+                "&:hover": {
+                    backgroundColor: "#35C37D"
+                }
+            },
+            containedPrimary: {
+                "&:hovers": {
+                    backgroundColor: "#ff5722",
+                    color: "#fff"
+                }
+            },
+
+            containedSecondary: {
+                color: "#ff5722",
+                "&:hovers": {
+                    backgroundColor: "#ff5722",
+                    color: "#fff"
+                }
+            }
+        }
+    }
 });
 
 const useStyles = makeStyles(theme => ({
     margin: {
-        margin: theme.spacing(1),
+        margin: theme.spacing(1)
     }
 }));
 
@@ -70,24 +98,26 @@ export default function BasicExample() {
                             </li>
                         </ul>
                     )}
-                    {showDebugTopNavigation && <hr/>}
-                    {showBackBackButton && <Button startIcon={<ArrowBackIos />} size="large" className={classes.margin}></Button>}
+                    {showDebugTopNavigation && <hr />}
+                    {showBackBackButton && (
+                        <Button startIcon={<ArrowBackIos />} size="large" className={classes.margin}></Button>
+                    )}
 
                     <Switch>
                         <Route exact path="/">
-                            <Start/>
+                            <Start />
                         </Route>
                         <Route path="/edit">
-                            <Editstock/>
+                            <Editstock />
                         </Route>
                         <Route exact path="/recordstock">
-                            <RecordStockContainer/>
+                            <RecordStockContainer />
                         </Route>
                         <Route path="/registry">
-                            <RegistryContainer/>
+                            <RegistryContainer />
                         </Route>
                         <Route path="/map">
-                            <MapContainer/>
+                            <MapContainer />
                         </Route>
                     </Switch>
                 </div>
