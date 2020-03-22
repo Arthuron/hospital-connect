@@ -7,6 +7,9 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 
 const PrivateOrInsurance = ({ onNext = () => {} }) => {
+    const handleClick = ()=>{
+      onNext(2)
+    };
     return (
         <>
             <Box p={1} bgcolor="background.paper">
@@ -16,7 +19,7 @@ const PrivateOrInsurance = ({ onNext = () => {} }) => {
             </Box>
 
             <Box p={1} bgcolor="background.paper">
-                <Button color="default" variant="contained" fullWidth={true}>
+                <Button color="default" variant="contained" fullWidth={true} onClick={handleClick}>
                     Private Person
                 </Button>
             </Box>

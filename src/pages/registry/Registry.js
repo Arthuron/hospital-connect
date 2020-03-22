@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 
 import PrivateOrInsurance from "./PrivateOrInsurance";
 import InsuranceInformations from "./InsuranceInformations";
+import PrivateInformations from "./PrivateInformations";
 
 const Registry = ({ hospitals }) => {
     const [clickFlowStatus, setclickFlowStatus] = React.useState(0);
@@ -10,8 +11,8 @@ const Registry = ({ hospitals }) => {
     const userID = "42";
     const hospital = hospitals[userID];
 
-    const _incrementFlowStatus = () => {
-        setclickFlowStatus(clickFlowStatus + 1);
+    const _incrementFlowStatus = (index=1) => {
+        setclickFlowStatus(clickFlowStatus + index);
     };
     const _decrementFlowStatus = () => {
         setclickFlowStatus(clickFlowStatus - 1);
@@ -21,6 +22,7 @@ const Registry = ({ hospitals }) => {
         <Container fixed>
             {clickFlowStatus === 0 && <PrivateOrInsurance onNext={_incrementFlowStatus} />}
             {clickFlowStatus === 1 && <InsuranceInformations onNext={() => {}} />}
+            {clickFlowStatus === 2 && <PrivateInformations onNext={() => {}} />}
         </Container>
     );
 };
