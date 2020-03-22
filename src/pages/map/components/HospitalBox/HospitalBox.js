@@ -3,7 +3,16 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import { Box, Typography } from "@material-ui/core";
 import styles from "./HospitalBox.module.css";
 import className from "classnames";
-const mapStatusToColor = status => ["green", "orange", "red"][status];
+const mapStatusToColor = status => {
+    switch (status) {
+        case "offer":
+            return "green";
+        case "need":
+            return "red";
+        default:
+            return "orange";
+    }
+};
 const HospitalBox = ({ hilfsmittel, title, description, tel }) => {
     return (
         <Box className={styles.box}>
