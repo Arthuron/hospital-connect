@@ -18,11 +18,13 @@ import RegistryContainer from "./containers/registryContainer/RegistryContainer"
 // making sure things like the back button and bookmarks
 // work properly.
 
+const showDebugTopNavigation = false;
+
 export default function BasicExample() {
     return (
         <Router>
             <div>
-                <ul>
+                {showDebugTopNavigation &&<ul>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -44,9 +46,8 @@ export default function BasicExample() {
                     <li>
                         <Link to="/recordstock">Record Stock</Link>
                     </li>
-                </ul>
-
-                <hr />
+                </ul>}
+                {showDebugTopNavigation &&<hr />}
 
                 {/*
           A <Switch> looks through all its children <Route>

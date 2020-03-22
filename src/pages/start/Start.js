@@ -1,6 +1,7 @@
 import React from "react";
 import {Button, Container, TextField, Typography} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import {Link} from "react-router-dom";
 
 export default function Start() {
     return (
@@ -18,7 +19,7 @@ export default function Start() {
                     <TextField id="password" label="Passwort" type="password" autoComplete="current-password" fullWidth={true}/>
                 </Box>
                 <Box p={1} pb={0} textAlign="right">
-                    <Button color="link">
+                    <Button color="default">
                         Passwort vergessen
                     </Button>
                 </Box>
@@ -28,9 +29,9 @@ export default function Start() {
                     </Button>
                 </Box>
                 <Box p={1} pt={0} bgcolor="background.paper">
-                    <Button variant="outlined" color="primary" fullWidth={true}>
+                    <Link to="/registry"><Button variant="outlined" color="primary" fullWidth={true}>
                         Registrieren
-                    </Button>
+                    </Button></Link>
                 </Box>
             </Container>
         </Container>
