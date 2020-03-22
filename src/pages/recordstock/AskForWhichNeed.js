@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
+import DialogBoxForButton from "../../components/dialogBoxForButton/DialogBoxForButton";
 
 const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
     return (
@@ -15,24 +16,38 @@ const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
-                        <Button
-                            color="primary"
-                            variant="contained"
-                            fullWidth={true}
-                            onClick={need}
-                        >
-                            Ja
-                        </Button>
+                        {need ? (
+                            <Button color="primary" variant="contained" fullWidth={true} onClick={need}>
+                                Ja
+                            </Button>
+                        ) : (
+                            <DialogBoxForButton
+                                buttonProps={{
+                                    variant: "contained",
+                                    color: "primary",
+                                    fullWidth: true,
+                                    disableElevation: true
+                                }}
+                                buttonLabel="Ja"
+                            />
+                        )}
                     </Box>
                     <Box p={1} pt={0} bgcolor="background.paper">
-                        <Button
-                            color="primary"
-                            variant="contained"
-                            fullWidth={true}
-                            onClick={notNeed}
-                        >
-                            Nein
-                        </Button>
+                        {notNeed ? (
+                            <Button color="primary" variant="contained" fullWidth={true} onClick={notNeed}>
+                                Nein
+                            </Button>
+                        ) : (
+                            <DialogBoxForButton
+                                buttonProps={{
+                                    variant: "contained",
+                                    color: "primary",
+                                    fullWidth: true,
+                                    disableElevation: true
+                                }}
+                                buttonLabel="Nein"
+                            />
+                        )}
                     </Box>
                 </>
             }
