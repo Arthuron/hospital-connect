@@ -9,13 +9,15 @@ import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
 const Map = ({ hospitals }) => {
     return (
-        <LayoutWrapper headline={"Deine Suchergebnisse"}>
-            <Filter hospitals={hospitals}>
-                <GoogleMaps />
-                <FilterOptions />
-                <FilterResults />
-            </Filter>
-        </LayoutWrapper>
+        hospitals.length > 0 && (
+            <LayoutWrapper headline={"Deine Suchergebnisse"}>
+                <Filter hospitals={hospitals}>
+                    <GoogleMaps />
+                    <FilterOptions />
+                    <FilterResults />
+                </Filter>
+            </LayoutWrapper>
+        )
     );
 };
 

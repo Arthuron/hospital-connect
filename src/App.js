@@ -21,20 +21,13 @@ const theme = createMuiTheme({
             main: "#ff5722"
         },
         secondary: {
-            main: "#fff",
+            main: "#ff5722",
             contrastText: "#ff5722"
         }
         // error: will use the default color
     },
     overrides: {
         MuiButton: {
-            // Name of the rule
-
-            outlined: {
-                "&:hover": {
-                    backgroundColor: "#35C37D"
-                }
-            },
             containedPrimary: {
                 "&:hovers": {
                     backgroundColor: "#ff5722",
@@ -43,10 +36,11 @@ const theme = createMuiTheme({
             },
 
             containedSecondary: {
+                backgroundColor: "#fff",
                 color: "#ff5722",
                 "&:hovers": {
                     backgroundColor: "#ff5722",
-                    color: "#fff"
+                    color: "#0f0"
                 }
             }
         }
