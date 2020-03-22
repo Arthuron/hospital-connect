@@ -24,6 +24,9 @@ const Recordstock = ({ hospitals }) => {
         setclickFlowStatus(clickFlowStatus - 1);
     };
 
+    if (clickFlowStatus === 3) {
+        return <Editstock hospital={hospital} goBack={_decrementFlowStatus} />;
+    }
     return (
         <LayoutWrapper headline="Suche">
             {clickFlowStatus === 0 && (
@@ -40,7 +43,6 @@ const Recordstock = ({ hospitals }) => {
                     notNeed={""}
                 />
             )}
-            {clickFlowStatus === 3 && <Editstock hospital={hospital} goBack={_decrementFlowStatus} />}
         </LayoutWrapper>
     );
 };
