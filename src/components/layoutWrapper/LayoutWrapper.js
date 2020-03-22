@@ -30,7 +30,8 @@ const LayoutWrapper = ({ children, headline, footer }) => {
             background: "#fff",
             display: "flex",
             flexDirection: "column",
-            overflow: "scroll"
+            overflow: "scroll",
+            boxShadow: "1px 1px 5px 5px rgba(0, 0, 0, .1)"
         },
         header: {
             margin: "40px auto 40px auto",
