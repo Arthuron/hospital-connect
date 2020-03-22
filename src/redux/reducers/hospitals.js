@@ -20,15 +20,15 @@ const initialState = {
         hilfsmittel: [
             {
                 name: "Atemschutz",
-                status: 0
+                status: "offer"
             },
             {
                 name: "Handschuhe",
-                status: 1
+                status: "need"
             },
             {
                 name: "Schuhe",
-                status: 2
+                status: "need"
             }
         ]
     },
@@ -53,15 +53,15 @@ const initialState = {
         hilfsmittel: [
             {
                 name: "Atemschutz",
-                status: 1
+                status: "offer"
             },
             {
                 name: "Handschuhe",
-                status: 2
+                status: "ok"
             },
             {
                 name: "Schuhe",
-                status: 0
+                status: "need"
             }
         ]
     },
@@ -85,15 +85,15 @@ const initialState = {
         hilfsmittel: [
             {
                 name: "Atemschutz",
-                status: 2
+                status: "ok"
             },
             {
                 name: "Handschuhe",
-                status: 2
+                status: "offer"
             },
             {
                 name: "Schuhe",
-                status: 0
+                status: "need"
             }
         ]
     }
