@@ -29,7 +29,7 @@ const DialogBoxForButton = ({ buttonProps, buttonLabel }) => {
                 <DialogTitle id="alert-dialog-title">Nicht implementiert im Prototypen</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        Diese Funktion ist noch nicht implementiert. Bitte auf Registrieren klicken.
+                        Diese Funktion ist noch nicht implementiert. Bitte einen anderen Button klicken.
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

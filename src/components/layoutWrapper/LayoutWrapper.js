@@ -8,6 +8,14 @@ import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
 
 const LayoutWrapper = ({ children, headline, footer, onBack }) => {
+    React.useEffect(() => {
+        function setDocHeight() {
+            document.documentElement.style.setProperty("--vh", `${window.innerHeight / 100}px`);
+        }
+
+        window.addEventListener("resize", setDocHeight);
+        window.addEventListener("orientationchange", setDocHeight);
+    }, []);
     const useStyles = makeStyles(theme => ({
         root: props => {
             return {
@@ -29,13 +37,13 @@ const LayoutWrapper = ({ children, headline, footer, onBack }) => {
             margin: "0 auto",
             padding: 10,
             height: 800,
-            maxHeight: "100vh",
             justifyContent: "space-between",
             background: "#fff",
             display: "flex",
             flexDirection: "column",
             overflow: "scroll",
-            boxShadow: "1px 1px 5px 5px rgba(0, 0, 0, .1)"
+            boxShadow: "1px 1px 5px 5px rgba(0, 0, 0, .1)",
+            maxHeight: "calc(var(--vh, 1vh) * 100)"
         },
         header: {
             margin: "40px auto 40px auto",
@@ -43,7 +51,8 @@ const LayoutWrapper = ({ children, headline, footer, onBack }) => {
         },
         backButton: {
             margin: theme.spacing(1),
-            position: "absolute"
+            position: "absolute",
+            top: 30
         }
     }));
     const { header, root, wrapper, pageWrapper, backButton } = useStyles();
@@ -52,7 +61,20 @@ const LayoutWrapper = ({ children, headline, footer, onBack }) => {
     return (
         <div className={pageWrapper}>
             <div>
-                {onBack && <Button startIcon={<ArrowBackIos />} size="large" className={backButton} onClick={(typeof onBack.linkTo !== 'undefined')? () => {history.push(onBack.linkTo)} :onBack}></Button>}
+                {onBack && (
+                    <Button
+                        startIcon={<ArrowBackIos />}
+                        size="large"
+                        className={backButton}
+                        onClick={
+                            typeof onBack.linkTo !== "undefined"
+                                ? () => {
+                                      history.push(onBack.linkTo);
+                                  }
+                                : onBack
+                        }
+                    ></Button>
+                )}
                 <div className={header}>
                     <img src={Logo} alt="d" />
                 </div>

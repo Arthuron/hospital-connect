@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 import Logo from "./logo.svg";
 import { useHistory } from "react-router-dom";
 
-const Splash = ({}) => {
+const Splash = () => {
     let history = useHistory();
 
     React.useEffect(() => {

@@ -55,8 +55,6 @@ export default function Start() {
                     />
                 </Box>
             </LayoutWrapper>
-
-            <DialogBoxForButton />
         </>
     );
 }

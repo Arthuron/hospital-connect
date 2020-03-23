@@ -7,14 +7,14 @@ import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const PrivateOrInsurance = ({ onNext = () => {}}) => {
+const PrivateOrInsurance = ({ onNext = () => {} }) => {
     const handleClick = () => {
         onNext(2);
     };
     return (
         <LayoutWrapper
             headline={"Registrieren"}
-            onBack={{linkTo: '/'}}
+            onBack={{ linkTo: "/" }}
             footer={
                 <>
                     <Box p={1} bgcolor="background.paper">
@@ -37,11 +37,11 @@ const PrivateOrInsurance = ({ onNext = () => {}}) => {
             }
         >
             <Box p={1} bgcolor="background.paper">
-                <Typography variant="h5" align={"center"} gutterBottom>
-                    Bitte wähle aus
+                <Typography variant="h6" align={"center"} gutterBottom>
+                    Bist du eine private Person und möchtest deine Hilfe anbieten?
                 </Typography>
                 <Typography variant="h6" align={"center"} gutterBottom>
-                    Bist du eine private Person und  möchtest deine Hilfe anbieten? Oder  möchtest du dich im Namen einer Klinik registrieren?
+                    Oder möchtest du dich im Namen einer Klinik registrieren?
                 </Typography>
             </Box>
         </LayoutWrapper>
