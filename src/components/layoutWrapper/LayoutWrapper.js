@@ -43,7 +43,8 @@ const LayoutWrapper = ({ children, headline, footer, onBack }) => {
             flexDirection: "column",
             overflow: "scroll",
             boxShadow: "1px 1px 5px 5px rgba(0, 0, 0, .1)",
-            maxHeight: "calc(var(--vh, 1vh) * 100)"
+            maxHeight: "calc(var(--vh, 1vh) * 100)",
+            position: "relative"
         },
         header: {
             margin: "40px auto 40px auto",
