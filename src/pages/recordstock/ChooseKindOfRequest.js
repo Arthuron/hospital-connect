@@ -41,9 +41,6 @@ const ChooseKindOfRequest = ({ name, need, onBack }) => {
                     Möchtest du einen Engpass melden oder Unterstützung anbieten ?
                 </Typography>
             </Box>
-            <Box p={0} pb={1} pt={1} bgcolor="background.paper">
-                <Divider variant="middle" />
-            </Box>
         </LayoutWrapper>
     );
 };

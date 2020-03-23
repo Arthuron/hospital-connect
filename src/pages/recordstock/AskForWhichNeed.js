@@ -60,9 +60,6 @@ const AskForWhichNeed = ({ name, needType, need, notNeed, onBack }) => {
                     Benötigst du {needType} ?
                 </Typography>
             </Box>
-            <Box p={0} pb={1} pt={1} bgcolor="background.paper">
-                <Divider variant="middle" />
-            </Box>
         </LayoutWrapper>
     );
 };

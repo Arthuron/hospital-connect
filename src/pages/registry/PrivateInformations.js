@@ -6,7 +6,7 @@ import Box from "@material-ui/core/Box";
 import { Link as RouterLink } from "react-router-dom";
 import LayoutWrapper from "../../components/layoutWrapper/LayoutWrapper";
 
-const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
+const PrivateInformations = ({ onNext = () => {} }, { onBack = () => {} }) => {
     const [support, setSupport] = React.useState("");
 
     const handleChange = event => {
@@ -20,7 +20,7 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
     return (
         <LayoutWrapper
             headline={"Registrieren"}
-            onBack={{linkTo: '/'}}
+            onBack={{ linkTo: "/" }}
             footer={
                 <>
                     <Box pb={1}>
@@ -45,13 +45,14 @@ const PrivateInformations = ({ onNext = () => {} },{onBack = () => {}}) => {
                 <TextField variant="outlined" fullWidth id="contact" label="Name und Nachname" />
             </Box>
             <Box pb={1}>
-                <FormControl fullWidth>
-                    <InputLabel id="support-label">Unterstützung als ...</InputLabel>
-                    <Select labelId="support-label" id="support" value={support} onChange={handleChange}>
-                        <MenuItem value={"Ärzte"}>Ärzte</MenuItem>
-                        <MenuItem value={"Pflegende"}>Pflegende</MenuItem>
-                        <MenuItem value={"Facility Manager"}>Facility Manager</MenuItem>
-                        <MenuItem value={"Administration / Resources"}>Administration / Resources</MenuItem>
+                <FormControl fullWidth variant="outlined">
+                    <InputLabel htmlFor="outlined-age-native-simple">Unterstützung als ...</InputLabel>
+                    <Select native onChange={handleChange} label="Unterstützung als ...">
+                        <option aria-label="None" value="" />
+                        <option value={"Ärzte"}>Ärzte</option>
+                        <option value={"Pflegende"}>Pflegende</option>
+                        <option value={"Facility Manager"}>Facility Manager</option>
+                        <option value={"Administration / Resources"}>Administration / Resources</option>
                     </Select>
                 </FormControl>
             </Box>

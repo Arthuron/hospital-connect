@@ -86,7 +86,7 @@ const Editstock = ({ hospital, goBack }) => {
 
     return (
         <LayoutWrapper
-            headline="Hilfsgüter"
+            headline="medizinische Hilfsmittel"
             onBack={goBack}
             footer={
                 <>
@@ -107,7 +107,7 @@ const Editstock = ({ hospital, goBack }) => {
         >
             <Box p={1} bgcolor="background.paper">
                 <Typography variant="h6" gutterBottom>
-                    Welche medizinischen Hilfsgüter benötigst du?
+                    Welche medizinischen Hilfsmittel benötigst du?
                 </Typography>
             </Box>
 
@@ -149,7 +149,7 @@ Editstock.defaultProps = {
                 status: "ok"
             },
             {
-                name: "Schuhe",
+                name: "Corona Testkit",
                 status: "need"
             },
             {
@@ -161,7 +161,7 @@ Editstock.defaultProps = {
                 status: "ok"
             },
             {
-                name: "Schuhe",
+                name: "Corona Testkit",
                 status: "need"
             },
             {
@@ -173,7 +173,7 @@ Editstock.defaultProps = {
                 status: "ok"
             },
             {
-                name: "Schuhe",
+                name: "Corona Testkit",
                 status: "need"
             },
             {
@@ -185,7 +185,7 @@ Editstock.defaultProps = {
                 status: "ok"
             },
             {
-                name: "Schuhe",
+                name: "Corona Testkit",
                 status: "need"
             }
         ]
